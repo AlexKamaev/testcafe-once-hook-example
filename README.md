@@ -1,6 +1,6 @@
 # testcafe-once-hook
 
-This is a workaround for the `beforeAll` feature described in `put-a-link-here`.
+This is a workaround for the `beforeAll` feature described in https://github.com/DevExpress/testcafe/issues/1345.
 
 The main idea of the feature request is to add the capability to execute test actions via TestController (click, hover, typeText, etc) once per fixture before starting all tests.
 
@@ -19,10 +19,6 @@ The example works by using https://expressjs.com/ and https://github.com/typicod
 - `/remove` - removes a record from the `JSON` file and redirects to the main page.
 
 To start the project, execute the `npm start` command;
-
-## Once helper
-Use the `once` helper from the `utils/once.js` file in the `fixture.beforeEach` and `fixture.afterEach` hooks.
-The `once` helper will execute its callback function only once per a browser for `fixture.before` and `fixture.after`. The first available browser will be chosen.
 
 Go to the `tests` directory to see the examples.
 
